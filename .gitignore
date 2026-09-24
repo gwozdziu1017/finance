@@ -1,0 +1,34 @@
+# Real financial data: never committed.
+# Fake test fixtures are the only allowed exception.
+*.csv
+*.pdf
+reports/
+!tests/fixtures/
+!tests/fixtures/**/*.csv
+!tests/fixtures/**/*.pdf
+
+# Secrets and personal local configuration
+.env
+.env.*
+.gitleaks.local.toml
+.git/reviewed-sha
+
+# Local-only Claude Code instructions
+CLAUDE.md
+CLAUDE.local.md
+
+# Python and uv
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
